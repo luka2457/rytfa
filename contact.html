@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>RYTFA</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+
+        <div class="navbar-left">
+            <a id="home" href="index.html">
+                <img alt="RYTFA" id="profpic" src="assets/images/track_icon-faea4f47ae13294df8a6a0cbee66538f.png">
+                <div id="logo">rytfa</div>
+            </a>
+        </div>
+
+        <div class="container justify-content-end" id="topContainer">
+
+            <button id="littleRightNav" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navDropDown">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar icon-bar2"></span>
+                <span class="icon-bar icon-bar3"></span>
+            </button>
+
+            <ul class="nav navbar-right" id="bigRightNav">
+                <li>
+                    <a href="#home1" class="scroll-link btn btn-xs btn-warning contactNav">Home</a>
+                </li>
+
+                <li>
+                    <a href="#details" class="scroll-link btn btn-xs btn-warning contactNav">Details</a>
+                </li>
+
+                <li>
+                    <a href="#staff" class="scroll-link btn btn-xs btn-warning contactNav">Staff</a>
+                </li>
+
+                <li>
+                    <a href="#registration" class="scroll-link btn btn-xs btn-warning contactNav">Registration</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="btn btn-xs btn-warning">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="navDropDown" class="navbar-collapse collapse in" aria-expanded="true">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#home1" class="scroll-link btn btn-xs btn-warning contactNav" data-id="home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#details" class="scroll-link btn btn-xs btn-warning contactNav" data-id="details">Details</a>
+                </li>
+
+                <li>
+                    <a href="#staff" class="scroll-link btn btn-xs btn-warning contactNav" data-id="staff">Staff</a>
+                </li>
+
+                <li>
+                    <a href="#registration" class="scroll-link btn btn-xs btn-warning contactNav" data-id="registration">Registration</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="btn btn-xs btn-warning">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="new_contact" class="center container">
+
+        <div class="row">
+            <div class="col-md-6 jumbotron">
+                <h2>Contact us if you have any questions!</h2>
+            </div>
+
+            <div class="contact-forms">
+                <div class="col-md-offset-1 col-md-5" id="contactFormBox">
+                    <form accept-charset="UTF-8" class="simple_form new_contact formContact" id="new_contact" role="form" data-toggle="validator" action="https://formspree.io/luke.karlovich@gmail.com" method="POST">
+                        <div class="controls">
+
+                            <img alt="Name" id="contact-form-icon" src="assets/images/name-dec6d51d9f13f867393974d896bd8015.png">
+                            <div class="a-form">
+                                <div class="form-group contact_name">
+                                    <input class="form-control" id="contact_name" placeholder="Name"
+                                        style="width: 300px" type="text" required="required" data-error="Can't be blank!" name="contact[name]">
+                                        <span class="help-block with-errors center"></span>
+                                </div>
+                            </div>
+
+                            <img alt="Email" id="contact-form-icon" src="assets/images/email-06e24ac364cb58994c64af9c085f7877.png">
+                            <div class="a-form">
+                                <div class="form-group  contact_email">
+                                    <input class="form-control" id="contact_email" placeholder="Email Address"
+                                        style="width: 300px" type="email" required="required" data-error="Please enter valid email address!"  name="contact[email]">
+                                        <span class="help-block with-errors center"></span>
+                                </div>
+                            </div>
+
+                            <img alt="Message" id="contact-form-icon" src="assets/images/message-6dabac579fcb80f7a5eac71b7e90df9c.png">
+                            <div class="a-form">
+                                <div class="form-group text optional contact_message">
+                                    <textarea class="text optional form-control" id="contact_message" placeholder="Message"
+                                        rows="7" style="width: 300px;"  name="contact[message]"></textarea>
+                                    </textarea>
+                                </div>
+                            </div>
+
+                            <input id="submitContact" class="btn btn-default" type="submit" value="Send Message" href="index.html">
+                            <a id="cancelBtn" class="btn" href="index.html">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <footer class="footer">
+            <div class="container">
+                <small>
+                    <div class="pull-right">
+                        Copyright © 2018 RYTFA.org | Rochester, Minnesota
+                    </div>
+                </small>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Link to Js -->
+    <script type="text/javascript" src="javascript.js"> </script>
+    <!-- Link to Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
